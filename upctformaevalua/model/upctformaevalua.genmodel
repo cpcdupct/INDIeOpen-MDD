@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/upctformaevalua/src" modelPluginID="upctformaevalua"
+    modelName="Upctformaevalua" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>upctformaevalua.ecore</foreignModel>
+  <genPackages prefix="Upctformaevalua" disposableProviderFactory="true" ecorePackage="upctformaevalua.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="upctformaevalua.ecore#//TypeGrade">
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//TypeGrade/highest"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//TypeGrade/middle"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//TypeGrade/lowest"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="upctformaevalua.ecore#//TypeHole">
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//TypeHole/visible"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//TypeHole/hole"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="upctformaevalua.ecore#//EvaluationLanguageType">
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//EvaluationLanguageType/EN"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//EvaluationLanguageType/ES"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//EvaluationLanguageType/FR"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//EvaluationLanguageType/EL"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//EvaluationLanguageType/LT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="upctformaevalua.ecore#//UnitLicenses">
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//UnitLicenses/PRIVATE"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//UnitLicenses/BY"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//UnitLicenses/BYSA"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//UnitLicenses/BYND"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//UnitLicenses/BYNC"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//UnitLicenses/BYNCSA"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//UnitLicenses/BYNCND"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="upctformaevalua.ecore#//EvaluationUnitType">
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//EvaluationUnitType/Interoperability"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//EvaluationUnitType/Open"/>
+      <genEnumLiterals ecoreEnumLiteral="upctformaevalua.ecore#//EvaluationUnitType/Preview"/>
+    </genEnums>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Evaluation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference upctformaevalua.ecore#//Evaluation/units"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//EvaluationUnit">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference upctformaevalua.ecore#//EvaluationUnit/questions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//EvaluationUnit/numberquestions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//EvaluationUnit/language"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//EvaluationUnit/license"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//EvaluationUnit/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//EvaluationUnit/institution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//EvaluationUnit/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//EvaluationUnit/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//EvaluationUnit/theme"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//EvaluationUnit/idunidad"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//EvaluationUnit/learninganalytics"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Training">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//Training/Attempts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//Training/grade"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Final"/>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Question">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//Question/correctfeedback"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//Question/incorrectfeedback"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Statement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//Statement/text"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Paragraph"/>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Hole">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//Hole/type"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Assertion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//Assertion/value"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//SingleAnswer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference upctformaevalua.ecore#//SingleAnswer/statements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference upctformaevalua.ecore#//SingleAnswer/answers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//SingleAnswer/correctanswer"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//MultipleAnswer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference upctformaevalua.ecore#//MultipleAnswer/statements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference upctformaevalua.ecore#//MultipleAnswer/answers"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//FillingAnswer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference upctformaevalua.ecore#//FillingAnswer/holes"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//TrueOrFalse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference upctformaevalua.ecore#//TrueOrFalse/assertions"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//NameElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//NameElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Answer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//Answer/text"/>
+    </genClasses>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Single"/>
+    <genClasses ecoreClass="upctformaevalua.ecore#//Multiple">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute upctformaevalua.ecore#//Multiple/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
