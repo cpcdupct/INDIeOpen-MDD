@@ -10,6 +10,10 @@ This is the repository for one of the components of the INDIeOpen architecture, 
 
 MDD component files have been created at the **Digital Content Creation Center** (CPCD), in the Universidad Politécnica de Cartagena.
 
+## Deployment
+
+It is only necessary to copy the jar libraries (content and evaluation) to the Generator microservice.
+
 ## License
 
 Affero General Public License 3.0 (AGPL-3.0)
